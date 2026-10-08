@@ -21,6 +21,9 @@ code {
   color: white;
   transition: all 0.3s ease;
 }
+.father-icon {
+  display:flex;
+}
 .father-icon:hover .child-icon {
   cursor: pointer;
   text-decoration: none;

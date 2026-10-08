@@ -114,7 +114,6 @@ const Header = () => {
       zIndex={10} 
       h={{ base: "140px", md: "60px" }}
       w="100%"
-      line-height="60px"
     >
       <Box color="white" margin="0 auto">
         <HStack
@@ -127,7 +126,7 @@ const Header = () => {
             <HStack spacing={8}>
               {socials.map((item) => (
                 <a className="father-icon" key={item.url} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
-                  <FontAwesomeIcon key={item.icon} className="child-icon" icon={item.icon} size="2x" />
+                  <FontAwesomeIcon  key={item.icon} className="child-icon" icon={item.icon} size="2x" />
                 </a>
               ))}
             </HStack>
