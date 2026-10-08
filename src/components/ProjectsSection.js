@@ -6,16 +6,16 @@ import Card from "./Card";
 const myReactProjects = [
   {
     title: "Conference expense planner",
-    description: `The web page was developed as the final project for the Coursera course "Front-End Application Development with React." 
-    It is a plant shop that allows users to select plants and view a shopping cart showing the total cost and details of the selected items.
-    The web page was deployed on GitHub.`,
+    description: `The website was developed as part of the Coursera course "Front-End Application Development with React." 
+    It is an event services site that allows users to select the venue, equipment, and catering needed to host an event, displaying a detailed total for each selected service. 
+    The website was deployed on GitHub.`,
     getImageSrc: () => require("../images/conference_expense_planner.jpg"),
     tag: "React · JavaScript",
     url: "https://mklocampo.github.io/conference_event_planner/"
   },
   {
     title: "E-plants shopping",
-    description: `Was built as the final project for the Coursera course "Front-End Application Development with React." 
+    description: `Was built as the final project for the course "Front-End Application Development with React." 
     It is a plant-purchasing app that allows users to select plants and view a shopping cart displaying the total cost and details of the selected items. 
     The web page was deployed on GitHub.`,
     getImageSrc: () => require("../images/e-plants_shopping.jpg"),
@@ -24,11 +24,14 @@ const myReactProjects = [
   },
   {
     title: "Gift link",
-    description: `This web page was created as part of the assessment for the "IBM Full-Stack JavaScript Developer Professional Certificate" specialization. 
+    description: `Was created as part of the assessment for the "IBM Full-Stack JavaScript Developer Professional Certificate" specialization. 
     It manages a list of donated items and offers advanced search functionality to view item details—accessible only to users logged into the system. 
     It also supports user registration, with data stored in a MongoDB database. 
     The initial loading of the information takes some time, as it is hosted for free.
-    The application's database is hosted on MongoDB Atlas, and the backend is deployed via Render, linked to GitHub.`,
+    The application's database is hosted on MongoDB Atlas, and the backend is deployed via Render, linked to GitHub.
+    You can log in to the application with the following information:
+    user: user@gmail.com,
+    password: 12345`,
     getImageSrc: () => require("../images/giftlink.jpg"),
     tag: "React · JavaScript",
     url: "https://mklocampo.github.io/giftlink-frontend/home.html"
@@ -49,7 +52,10 @@ const myAngularProjects = [
     title: "Firebase authentication",
     description: `This web page was built as the final project for the course "Firebase Authentication: Build Secure Angular Apps". 
     Implementation of user registration and login forms using various authentication methods, such as username/password or external providers like Google.
-    The web page was deployed on GitHub.`,
+    The web page was deployed on GitHub.
+    You can log in to the application with the following information:
+    user: user@gmail.com,
+    password: 12345`,
     getImageSrc: () => require("../images/authFirebase.jpg"),
     tag: "Angular · JavaScript",
     url: "https://mklocampo.github.io/angular-authFirebase/home"
