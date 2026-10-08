@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.33f6d86c.css",
+    "main.js": "/react-portfolio/static/js/main.30ed6559.js",
+    "static/js/453.ff880396.chunk.js": "/react-portfolio/static/js/453.ff880396.chunk.js",
+    "static/media/travelRecommendation.jpg": "/react-portfolio/static/media/travelRecommendation.95b6859a0d4551c37ab3.jpg",
+    "static/media/profile.png": "/react-portfolio/static/media/profile.e70e60e0a3063b5e82c2.png",
+    "static/media/cocktails-app.jpg": "/react-portfolio/static/media/cocktails-app.2cd9b77ca9744ea9e600.jpg",
+    "static/media/conference_expense_planner.jpg": "/react-portfolio/static/media/conference_expense_planner.7dc7f371f2fb0de09708.jpg",
+    "static/media/giftlink.jpg": "/react-portfolio/static/media/giftlink.44702cb3c26da540f321.jpg",
+    "static/media/e-plants_shopping.jpg": "/react-portfolio/static/media/e-plants_shopping.1ba6265289488f8b8ad1.jpg",
+    "static/media/IBM Full-Stack JavaScript.jpg": "/react-portfolio/static/media/IBM Full-Stack JavaScript.13046d99162d81f2c432.jpg",
+    "static/media/Angular From Basics to Advanced Development.jpg": "/react-portfolio/static/media/Angular From Basics to Advanced Development.dec31707c4565422751a.jpg",
+    "static/media/Java Programming for Beginners.jpg": "/react-portfolio/static/media/Java Programming for Beginners.530efba10711eea0fe96.jpg",
+    "static/media/Advanced React.jpg": "/react-portfolio/static/media/Advanced React.509b25018905375a963a.jpg",
+    "static/media/React Basics.jpg": "/react-portfolio/static/media/React Basics.307b3c4162b0163aa0f8.jpg",
+    "static/media/Introduction to Jira.jpg": "/react-portfolio/static/media/Introduction to Jira.e092755e7bf6284ccbdb.jpg",
+    "static/media/Microsoft Certified - Azure Data Fundamentals.jpg": "/react-portfolio/static/media/Microsoft Certified - Azure Data Fundamentals.49b0b271bf159df6ba25.jpg",
+    "static/media/portfolio.jpg": "/react-portfolio/static/media/portfolio.e708455121c45372af38.jpg",
+    "static/media/authFirebase.jpg": "/react-portfolio/static/media/authFirebase.a69622bf2857cf827034.jpg",
+    "static/media/JavaScript Programming with React, Node & MongoDB Specialization.jpg": "/react-portfolio/static/media/JavaScript Programming with React, Node & MongoDB Specialization.8400880d772d5b608837.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.33f6d86c.css.map": "/react-portfolio/static/css/main.33f6d86c.css.map",
+    "main.30ed6559.js.map": "/react-portfolio/static/js/main.30ed6559.js.map",
+    "453.ff880396.chunk.js.map": "/react-portfolio/static/js/453.ff880396.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33f6d86c.css",
+    "static/js/main.30ed6559.js"
+  ]
+}
