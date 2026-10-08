@@ -60,7 +60,7 @@ const LandingSection = () => {
           Contact me
         </Heading>
         <Box p={4} rounded="lg" backgroundColor="#1e293b" border="1px solid #334155">
-          <form onSubmit={formik.handleSubmit} alignItems="center">
+          <form onSubmit={formik.handleSubmit} >
             <VStack>
               <FormControl isInvalid={formik.touched.firstName && Boolean(formik.errors.firstName)}>
                 <FormLabel htmlFor="firstName">Name</FormLabel>

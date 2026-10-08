@@ -111,30 +111,35 @@ const Header = () => {
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
       borderBottom="2px solid #00DFD8"
-      zIndex={10}
+      zIndex={10} 
+      h={{ base: "140px", md: "60px" }}
       w="100%"
+      line-height="60px"
     >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
+      <Box color="white" margin="0 auto">
         <HStack
           px={16}
-          py={4}
-          justifyContent="space-between"
+          py={{ base: "2", md: "4" }}
+          justifyContent={{ base: "center", md: "space-between" }}
           alignItems="center"
         >
-          <Flex as="nav"
-            display={{ base: "none", md: "flex" }}
-            flexDirection={{ base: "row", md: "column" }}
-          >
-            <HStack spacing={8} >
+          <Flex as="nav" display={{ base: "none", md: "flex" }}>
+            <HStack spacing={8}>
               {socials.map((item) => (
-                <a className="father-icon" key={item.icon} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
-                  <FontAwesomeIcon icon={item.icon} size="2x" key={item.icon} className="child-icon" />
+                <a className="father-icon" key={item.url} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
+                  <FontAwesomeIcon key={item.icon} className="child-icon" icon={item.icon} size="2x" />
                 </a>
               ))}
             </HStack>
           </Flex>
           <nav>
-            <HStack spacing={8} fontWeight="semibold">
+            <HStack
+              fontWeight="semibold"
+              width="max-content"
+              display="flex"
+              flexDirection={{ base: "column", md: "row" }}
+              gap={{ base: "2", md: "8" }}
+            >
               <a href="/#landing" onClick={handleClick('aboutme')} ><Text _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>About me</Text></a>
               <a href="/#projects" onClick={handleClick('projects')} ><Text _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Projects</Text></a>
               <a href="/#certificates" onClick={handleClick('certificates')} ><Text _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Certificates</Text></a>

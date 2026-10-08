@@ -13,10 +13,11 @@ const LandingSection = () => (
     justifyContent="center"
     alignItems="center"
     isDarkBackground
-     backgroundColor="#0f172a"
+    backgroundColor="#0f172a"
+    padding-top={{ base: "150px", md: "70px" }}
   > 
     <VStack spacing={6}> 
-     <VStack spacing={4} alignItems="center"> 
+     <VStack spacing={4} alignItems="center" > 
        <Avatar src={profileImage} size="2xl" name="Mike" /> 
        <Heading as="h4" size="md" noOfLines={1}> {greeting} </Heading> 
      </VStack> 
