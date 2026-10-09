@@ -7,7 +7,7 @@ import {
   
 } from "@fortawesome/free-brands-svg-icons";
 import faCreddly from '../images/credly-icon.png'
-import { Box, HStack, Text, Image, Flex, Icon } from "@chakra-ui/react";
+import { Box, HStack, Text, Image, Flex, Icon, Tooltip } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -140,19 +140,35 @@ const Header = () => {
               gap={8}
             >
               <a href="/#landing" onClick={handleClick('aboutme')} >
-                <Icon as={FontAwesomeIcon} icon={faUser} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                <Tooltip label="About Me" hasArrow>
+                  <span>
+                    <Icon as={FontAwesomeIcon} icon={faUser} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                  </span>
+                </Tooltip>
                 <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>About me</Text>
               </a>
               <a href="/#projects" onClick={handleClick('projects')} >
-                <Icon as={FontAwesomeIcon} icon={faProjectDiagram} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                <Tooltip label="Projects" hasArrow>
+                  <span>
+                    <Icon as={FontAwesomeIcon} icon={faProjectDiagram} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                  </span>
+                </Tooltip>
                 <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Projects</Text>
               </a>
               <a href="/#certificates" onClick={handleClick('certificates')} >
-                <Icon as={FontAwesomeIcon} icon={faAward} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+              <Tooltip label="Certificates" hasArrow>
+                  <span>
+                    <Icon as={FontAwesomeIcon} icon={faAward} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                  </span>
+                </Tooltip>
                 <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Certificates</Text>
               </a>
               <a href="/#contact-me" onClick={handleClick('contactme')} >
-                <Icon as={FontAwesomeIcon} icon={faAddressCard} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+              <Tooltip label="Contact Me" hasArrow>
+                  <span>
+                    <Icon as={FontAwesomeIcon} icon={faAddressCard} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                  </span>
+                </Tooltip>
                 <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Contact Me</Text>
               </a>
             </HStack>
