@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faAward } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone, faAward, faUser, faProjectDiagram, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
-  faLinkedin
+  faLinkedin,
+  
 } from "@fortawesome/free-brands-svg-icons";
 import faCreddly from '../images/credly-icon.png'
-import { Box, HStack, Text, Image, Flex } from "@chakra-ui/react";
+import { Box, HStack, Text, Image, Flex, Icon } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -101,32 +102,32 @@ const Header = () => {
   return (
     <Box
       ref={headerRef}
-      position={{ base: "static", md: "fixed" }}
-      top={{ md: "0" }}
-      left={{ md: "0" }}
-      right={{ md: "0" }}
-      translateY={{ md: "0" }}
+      position="fixed"
+      top={0}
+      left={0}
+      right={0}
+      translateY={0}
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
       borderBottom="2px solid #00DFD8"
       zIndex={10} 
-      h={{ base: "140px", md: "60px" }}
+      h="60px"
       w="100%"
     >
       <Box color="white" margin="0 auto">
         <HStack
           px={16}
-          py={{ base: "2", md: "4" }}
+          py={{ base: "2", md: "3" }}
           justifyContent={{ base: "center", md: "space-between" }}
           alignItems="center"
         >
           <Flex as="nav" display={{ base: "none", md: "flex" }}>
             <HStack spacing={8}>
               {socials.map((item) => (
-                <a className="father-icon" key={item.url} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
-                  <FontAwesomeIcon  key={item.icon} className="child-icon" icon={item.icon} size="2x" />
+                <a key={item.url} href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
+                  <Icon as={FontAwesomeIcon} key={item.icon} icon={item.icon} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} />
                 </a>
               ))}
             </HStack>
@@ -136,13 +137,24 @@ const Header = () => {
               fontWeight="semibold"
               width="max-content"
               display="flex"
-              flexDirection={{ base: "column", md: "row" }}
-              gap={{ base: "2", md: "8" }}
+              gap={8}
             >
-              <a href="/#landing" onClick={handleClick('aboutme')} ><Text _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>About me</Text></a>
-              <a href="/#projects" onClick={handleClick('projects')} ><Text _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Projects</Text></a>
-              <a href="/#certificates" onClick={handleClick('certificates')} ><Text _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Certificates</Text></a>
-              <a href="/#contact-me" onClick={handleClick('contactme')} ><Text _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Contact Me</Text></a>
+              <a href="/#landing" onClick={handleClick('aboutme')} >
+                <Icon as={FontAwesomeIcon} icon={faUser} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>About me</Text>
+              </a>
+              <a href="/#projects" onClick={handleClick('projects')} >
+                <Icon as={FontAwesomeIcon} icon={faProjectDiagram} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Projects</Text>
+              </a>
+              <a href="/#certificates" onClick={handleClick('certificates')} >
+                <Icon as={FontAwesomeIcon} icon={faAward} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Certificates</Text>
+              </a>
+              <a href="/#contact-me" onClick={handleClick('contactme')} >
+                <Icon as={FontAwesomeIcon} icon={faAddressCard} display={{base: "flex", md: "none"}} _hover={{ color: "#00DFD8", transform: "scale(1.2)"}} boxSize={8} pt={1} />
+                <Text display={{base: "none", md: "flex"}} _hover={{ color: "#00DFD8", transition: "all 0.3s ease" }}>Contact Me</Text>
+              </a>
             </HStack>
           </nav>
         </HStack>

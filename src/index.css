@@ -17,19 +17,6 @@ code {
 }
 
 /*----------------added---------------*/
-.child-icon {
-  color: white;
-  transition: all 0.3s ease;
-}
-.father-icon {
-  display:flex;
-}
-.father-icon:hover .child-icon {
-  cursor: pointer;
-  text-decoration: none;
-  color: #00DFD8;
-  transform: scale(1.2);
-}
 
 .child-link {
   color: #00DFD8 !important;
@@ -41,3 +28,5 @@ code {
   color: #F2A153 !important;
 }
 /*--------------------------------------*/
+
+
